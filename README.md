@@ -17,3 +17,15 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Layout - Figma](https://www.figma.com/design/qRWowsfocTJ8rKQt4NJsOv/desktop?node-id=332-3&t=N1OScThvo5XunYte-0)
 
 * [Diagrama de casos de uso](./Diagramas-Pramanha/CDUs%20Pramanha.png)
+
+<h2>📌 Como rodar </h2>
+* Entre na pasta 'pramanha-back'
+* Abra o terminal
+
+`.\.venv\Scripts\activate`
+
+`python manage.py makemigrations`
+
+`python manage.py migrate`
+
+`python manage.py runserver`
