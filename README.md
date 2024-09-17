@@ -19,7 +19,9 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Diagrama de casos de uso](./Diagramas-Pramanha/CDUs%20Pramanha.png)
 
 <h2>📌 Como rodar </h2>
+
 * Entre na pasta 'pramanha-back'
+
 * Abra o terminal
 
 `.\.venv\Scripts\activate`
