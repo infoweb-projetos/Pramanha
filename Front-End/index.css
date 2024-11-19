@@ -99,19 +99,20 @@ main{
     padding-top: 3em;
     padding-bottom: 3em;
 }
-#disciplinas_cabecalho{
+#pagina_cabecalho{
     display: flex;
     width: 59.9%;
     margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 4em;
 }
-#disciplinas_cabecalho h1{
+#pagina_cabecalho h1{
     font-weight: bold;
     height: 100%;
     font-size: 28px;
+    margin-top: 1em;
 }
-#disciplinas_cabecalho button{
+#pagina_cabecalho button{
     background-color: #EFB9AF;
     border: 0;
     cursor: pointer;
@@ -123,10 +124,10 @@ main{
     transition: 180ms;
     padding: 0 1em 0 1em;
 }
-#disciplinas_cabecalho button:hover{
+#pagina_cabecalho button:hover{
     background-color: #EF797E;
 }
-#disciplinas_cabecalho button img{
+#pagina_cabecalho button img{
     width: 25px;
     margin-right: 0.5em;
     margin-top: 1.2em;
@@ -141,11 +142,15 @@ main{
     margin: 0 auto;
     margin-bottom: 6em;
 } 
+#disciplinas a{
+    color: #1d1d1d;
+    text-decoration: none;
+}
 .disciplinas{ 
     background-color: #FF5C6D;
     padding: 2.5em;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 3.5em;
     text-align: center;
     transform: rotate(3deg);
     font-size: 14.5px;

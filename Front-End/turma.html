@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="turma.css" rel="stylesheet" />
+    <title>Pramanhã - Turma</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+    </style>
+    <script src="turma.js"></script>
+    
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h1 id="logo">
+                <a href="index.html"><img src="imagens/logo.svg" /></a> 
+            </h1>
+
+            <form action="" id="barra_pesquisa">
+                <input type="search" name="pesquisa" placeholder="Busque sua turma" />
+                <button type="submit"><img src="imagens/lupa.svg" /></button>
+            </form>
+
+            <ul>
+                <li id="botao_not"><button type="button"><img src="imagens/notificacao.svg" /></button></li>
+                <li id="botao_perfil"><a href="login.html"><img src="imagens/conta.svg" /></a></li>
+            </ul>
+        </nav>   
+
+    </header>
+
+    <main>
+        <section id="pagina_cabecalho">
+
+            <h1><b>Infoweb 4V</b> > Matemática</h1>
+
+            <button onclick="document.getElementById('id01').style.display='block'"><img src="imagens/adicionar.svg" /> <span>Adicionar tarefa</span></button>
+
+        </section>
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="tarefa.html">
+              <div class="container">
+
+                <h1 id="adicionar_tarefa_cabecalho"><img src="imagens/adicionar.svg" /> <span>Adicionar tarefa</span></h1>
+                    
+                <div id="container_tarefa_1">
+                    <input class="barra_texto" type="text" placeholder="Digite a atividade" required />
+                    <br />
+                    <input class="barra_texto" type="text" placeholder="Detalhes" />
+                </div>
+
+                <div id="container_tarefa_2">
+                    <div id="data_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/calendario_icone.svg" /> <span>21 de Outubro, 09:30</span>
+                    </div>
+                    <div id="cor_da_tarefa">
+                        <span id="cor_tarefa"></span>
+                        <input id="hexadecimal" type="text" value="#FFAF66">
+                    </div>
+                </div>
+
+                <div id="container_tarefa_3">
+                    <div id="notificacao_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/notificacao.svg" /> <span>7 dias antes</span>
+                    </div>
+                    <div id="urgente">
+                        <input type="checkbox" name="urgente"  />
+                        <label for="urgente">Tarefa urgente</label>
+                    </div>
+                </div>
+              
+                <div class="container_botoes">
+                    <div id="botoes">
+                        <a href="turma.html" class="adicionar"><div><img src="imagens/certo_icone.svg" /><span>Adicionar</span></div></a>
+                        <button onclick="document.getElementById('id01').style.display='none'" class="cancelar"><div><img src="imagens/x_icone.svg"><span>Cancelar</span></div></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+
+        <section>
+
+            <table>
+
+                <div id="calendario_cabecalho">
+                    <img src="imagens/seta.svg" id="seta_esquerda" />
+                    <h1>Janeiro | 2024</h1>
+                    <img src="imagens/seta.svg" id="seta_direita" />
+                </div>
+     
+            <thead>
+                <tr>
+                    <th>
+                        Dom</th>
+                    <th>
+                        Seg</th>
+                    <th>
+                        Ter</th>
+                    <th>
+                        Qua</th>
+                    <th>
+                        Qui</th>
+                    <th>
+                        Sex</th>
+                    <th>
+                        Sab</th>
+                </tr>
+            </thead>
+     
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        </section>
+
+
+    </main>
+    
+    <footer>
+
+        <address>
+            <div>
+                <p>Pramanhã CIA, 00.123.987/0001-50 </p>
+            </div>
+            <div id="redes_sociais">
+                <a href="https://www.x.com/"><img src="imagens/x.svg" /></a>
+                <a href="https://instagram.com/"><img src="imagens/instagram.svg" /></a>
+                <a href="https://gmail.com/"><img src="imagens/gmail.svg" /></a>
+            </div>
+        </address>
+
+    </footer>
+
+</body>
+</html>
