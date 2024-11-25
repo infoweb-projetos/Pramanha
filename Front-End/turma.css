@@ -174,7 +174,8 @@ tbody td{
     text-align: left;
     padding-top: 5px;
     padding-left: 1em;
-    padding-bottom: 5.2em;
+    padding-bottom: 6.2em;
+    position: relative;
 }
 tbody td + td{
     border-left: 1px solid black;
@@ -183,6 +184,32 @@ tbody td{
     font-size: 19px;
     font-weight: 400;
 }
+.post_it{
+    text-align: center;
+    font-size: 19px;
+    position: absolute; /*O td PRECISA ser relative para funcionar*/
+    max-height: 5.5em;
+    height: 100%;
+    max-width: 7em;
+    width: 100%;
+    transform: rotate(-5deg);
+    border: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px grey;
+}
+#post_it_1{
+    background-color: #5ECFFF;
+}
+#post_it_2{
+    background-color: #ADFF5A;
+}
+#post_it_3{
+    background-color: #FF5C6D;
+}
+#post_it_4{
+    background-color: #FF8C45;
+}
+
 /*Footer*/
 
 footer{
@@ -208,7 +235,10 @@ address a img:hover{
     margin-left: 0.8em;
 }
 
-/*modal*/
+
+/*modal 1*/
+
+
 
 /* Float cancel and delete buttons and add an equal width */
 
@@ -286,7 +316,7 @@ address a img:hover{
 }
 
 /* The Modal (background) */
-.modal {
+.modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -303,8 +333,9 @@ address a img:hover{
 .modal-content {
   background-color: #F5ECDA;
   margin: 0 auto;
-  margin-top: 15em;
-  width: 35%; /* Could be more or less, depending on screen size */
+  margin-top: 10em;
+  width: 100%; /* Could be more or less, depending on screen size */
+  max-width: 35%;
   border-radius: 0.5em;
 }
  
@@ -419,4 +450,38 @@ address a img:hover{
 #urgente label{
     font-size: 18px;
     font-weight: 450;
+}
+
+
+/*Modal 2*/
+
+#id02{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #3d3d3d4b;
+    padding-top: 50px;
+}
+#ver_tarefa_descricao{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#id03{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #3d3d3d4b;
+    padding-top: 50px;
 }

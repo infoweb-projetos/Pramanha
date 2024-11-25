@@ -120,7 +120,11 @@
             <tbody>
                 <tr>
                     <td></td>
-                    <td>1</td>
+                    <td>1 
+                        <div>
+                            <button id="post_it_1" onclick="document.getElementById('id02').style.display='block'" class="post_it">Prova</button>
+                        </div>
+                    </td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -134,7 +138,11 @@
                     <td>9</td>
                     <td>10</td>
                     <td>11</td>
-                    <td>12</td>
+                    <td>12
+                        <div>
+                            <button id="post_it_2" onclick="document.getElementById('id02').style.display='block'" class="post_it">Prova</button>
+                        </div>
+                    </td>
                     <td>13</td>
                 </tr>
                 <tr>
@@ -147,7 +155,11 @@
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>21</td>
+                    <td>21
+                        <div>
+                            <button id="post_it_3" onclick="document.getElementById('id02').style.display='block'" class="post_it">Prova</button>
+                        </div>
+                    </td>
                     <td>22</td>
                     <td>23</td>
                     <td>24</td>
@@ -159,7 +171,11 @@
                     <td>28</td>
                     <td>29</td>
                     <td>30</td>
-                    <td>31</td> 
+                    <td>31
+                        <div>
+                            <button id="post_it_4" onclick="document.getElementById('id02').style.display='block'" class="post_it">Prova</button>
+                        </div>
+                    </td> 
                     <td></td>
                     <td></td>
                     <td></td>
@@ -178,6 +194,95 @@
 
         </section>
 
+        <!--MODAL 2 / VER TAREFA-->
+
+        <div id="id02" id="ver_tarefa">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="javascript:void(0);">
+              <div class="container">
+
+                <h1 id="adicionar_tarefa_cabecalho"><img src="imagens/tarefa.svg" /> <span>Prova</span></h1>
+
+                <p id="ver_tarefa_descricao">A prova consistirá de seila</p>
+
+                <div id="container_tarefa_2">
+                    <div id="data_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/calendario_icone.svg" /> <span>21 de Outubro, 09:30</span>
+                    </div>
+                    <div id="cor_da_tarefa">
+                        <span id="cor_tarefa"></span>
+                        <input id="hexadecimal" type="text" value="#FFAF66">
+                    </div>
+                </div>
+
+                <div id="container_tarefa_3">
+                    <div id="notificacao_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/notificacao.svg" /> <span>7 dias antes</span>
+                    </div>
+                    <div id="urgente">
+                        <input type="checkbox" name="urgente" checked onclick="return false"/>
+                        <label for="urgente">Tarefa urgente</label>
+                    </div>
+                </div>
+              
+                <div class="container_botoes">
+                    <div id="botoes">
+                        <button onclick="document.getElementById('id02').style.display='none'; document.getElementById('id03').style.display='block'"class="adicionar"><div><img src="imagens/editar.svg" /><span>Editar</span></div></button>
+                        <button onclick="document.getElementById('id02').style.display='none'" class="cancelar"><div><img src="imagens/x_icone.svg"><span>Excluir</span></div></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+
+        <!--MODAL 3 / EDITAR TAREFA-->
+
+        <div id="id03">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="turma.html">
+              <div class="container">
+
+                <h1 id="adicionar_tarefa_cabecalho"><img src="imagens/tarefa.svg" /> <span>Editar tarefa</span></h1>
+
+                <div id="container_tarefa_1">
+                    <input class="barra_texto" type="text" placeholder="Digite a atividade" required value="Prova"/>
+                    <br />
+                    <input class="barra_texto" type="text" placeholder="Detalhes" value="A prova consistirá de seila" />
+                </div>
+
+                <div id="container_tarefa_2">
+                    <div id="data_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/calendario_icone.svg" /> <span>21 de Outubro, 09:30</span>
+                    </div>
+                    <div id="cor_da_tarefa">
+                        <span id="cor_tarefa"></span>
+                        <input id="hexadecimal" type="text" value="#FFAF66">
+                    </div>
+                </div>
+
+                <div id="container_tarefa_3">
+                    <div id="notificacao_tarefa" class="conteudo_tarefa">
+                        <img src="imagens/notificacao.svg" /> <span>7 dias antes</span>
+                    </div>
+                    <div id="urgente">
+                        <input type="checkbox" name="urgente" checked />
+                        <label for="urgente">Tarefa urgente</label>
+                    </div>
+                </div>
+              
+                <div class="container_botoes">
+                    <div id="botoes">
+                        <button type="submit" class="adicionar"><div><img src="imagens/editar.svg" /><span>Editar</span></div></button>
+                        <button onclick="document.getElementById('id03').style.display='none'" class="cancelar"><div><img src="imagens/x_icone.svg"><span>Cancelar</span></div></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
 
     </main>
     
