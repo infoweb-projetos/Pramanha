@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="index.css" rel="stylesheet" />
     <title>Pramanhã - Home</title>
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
     </style>
-    
 </head>
-
 <body>
     <header>
-
         <nav>
             <h1 id="logo">
                 <a href="index.html"><img src="imagens/logo.svg" /></a> 
@@ -31,59 +27,54 @@
                 <li id="botao_perfil"><a href="login.html"><img src="imagens/conta.svg" /></a></li>
             </ul>
         </nav>   
-
     </header>
 
     <main>
-
         <section id="pagina_cabecalho">
-
             <h1>Infoweb 4V</h1>
-
             <button><img src="imagens/adicionar.svg" /> <span>Adicionar disciplina</span></button>
-
         </section>
 
-        <section id="disciplinas">
-            <a href="turma.html"><div class="disciplinas" id="disciplina_1" style="background-color: #FF8C45;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_2" style="background-color: #FF5C6D;">
-                <h2>História</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_3" style="background-color: #5ECFFF;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_4" style="background-color: #ADFF5A;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_5" style="background-color: #FF8C45;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_6" style="background-color: #ADFF5A;">
-                <h2>Matemática</h2>   
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_7" style="background-color: #5ECFFF;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_8" style="background-color: #FF8C45;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_9" style="background-color: #FF5C6D;">
-                <h2>Matemática</h2>
-            </div></a>
-            <a href="turma.html"><div class="disciplinas" id="disciplina_10" style="background-color: #ADFF5A;"> 
-                <h2>Matemática</h2>
-            </div></a>
-            
-        </section>
+            <section id="disciplinas">
+                <a href="turma.html"><div class="disciplinas" id="disciplina_1" style="background-color: #FF8C45;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_2" style="background-color: #FF5C6D;">
+                    <h2>História</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_3" style="background-color: #5ECFFF;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_4" style="background-color: #ADFF5A;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_5" style="background-color: #FF8C45;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_6" style="background-color: #ADFF5A;">
+                    <h2>Matemática</h2>   
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_7" style="background-color: #5ECFFF;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_8" style="background-color: #FF8C45;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_9" style="background-color: #FF5C6D;">
+                    <h2>Matemática</h2>
+                </div></a>
+                <a href="turma.html"><div class="disciplinas" id="disciplina_10" style="background-color: #ADFF5A;"> 
+                    <h2>Matemática</h2>
+                </div></a>
+                
+            </section>
+    
+
 
         <hr id="divisora" />
 
         <section id="pagina_baixo">
-
             <section class="cards" id="card_membro">
-
                 <div class="card_cabecalho">
                     <div class="card_titulo">
                         <img src="imagens/membros.svg" />
@@ -93,7 +84,6 @@
                     <div>
                         <button>Ver todos</button>
                     </div>    
-
                 </div>
 
                 <div class="membros">
@@ -142,7 +132,6 @@
                 </div>
 
             </section>
-
             <section class="cards" id="card_membro">
 
                 <div class="card_cabecalho">
@@ -172,10 +161,59 @@
 
         </section>  
 
+            </section>
+        </section>  
     </main>
 
+    <dialog id="modal_membros">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h2>Membros</h2>
+                <img src="imagens/membros.svg" alt="Ícone de membros" />
+            </div>
+            <ul id="lista_membros">
+                <li>
+                    Gomes da Cunha
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+                <li>
+                    José da Silva
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+                <li>
+                    Maria Soares
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+                <li>
+                    Maria Carla
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+                <li>
+                    Beatriz Arruda
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+                <li>
+                    Ana Maria
+                    <button class="remove_member">
+                        <img src="imagens/borracha.svg" alt="Remover membro" />
+                    </button>
+                </li>
+            </ul>
+            <button id="close_modal">Fechar</button>
+        </div>
+    </dialog>
+    
     <footer>
-
         <address>
             <div>
                 <p>Pramanhã CIA, 00.123.987/0001-50 </p>
@@ -186,8 +224,8 @@
                 <a href="https://gmail.com/"><img src="imagens/gmail.svg" /></a>
             </div>
         </address>
-
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
