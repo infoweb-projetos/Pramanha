@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   buttonVerTodos.onclick = function () {
       modal.showModal();
   };
-
+//fechar
   closeModalButton.onclick = function () {
       modal.close();
   };
