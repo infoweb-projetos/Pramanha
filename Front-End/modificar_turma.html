@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="modificar_turma.css" rel="stylesheet" />
+    <title>Pramanhã - Editar turma</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+    </style>
+    
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h1 id="logo">
+                <a href="turmas.html"><img src="imagens/logo.svg" /></a> 
+            </h1>
+
+            <form action="" id="barra_pesquisa">
+                <input type="search" name="pesquisa" placeholder="Busque sua turma" />
+                <button type="submit"><img src="imagens/lupa.svg" /></button>
+            </form>
+
+            <ul id="nav_botoes">
+                <li id="botao_perfil"><a href="login.html"><img src="imagens/conta.svg" /></a></li>
+                <li id="botao_menu">
+                    <button type="button"><img src="imagens/menu.svg" /></button>
+
+                    <!--Modal - Menu-->
+
+                    <div id="menu_modal">
+                        <ul>
+                            <li><a href="turmas.html">Turmas</a></li>
+                            <li><a href=".html">Sair da conta</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>   
+
+    </header>
+
+    <main>
+        <div>
+        <div id="membros_da_turma">
+
+            <div class="card_cabecalho">
+                <div class="card_titulo">
+                    <img src="imagens/membros.svg" />
+                    <h1>Membros</h1>
+                </div> 
+
+            </div>
+
+            <div id="membros_turma">
+                <div class="membros">
+                    <svg height="72" width="72">
+                        <defs>
+                            <clipPath id="icone_perfil">
+                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
+                            </clipPath>
+                        </defs>
+                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
+                    </svg>
+                    <div class="informacao_membro">
+                        <h2>Gomes Gomes da Cunha</h2>
+                        <h3>Administrador</h3>
+                    </div>
+                    <input type="image" src="imagens/ban.svg" />
+                </div>
+
+                <div class="membros">
+                    <svg height="72" width="72">
+                        <defs>
+                            <clipPath id="icone_perfil">
+                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
+                            </clipPath>
+                        </defs>
+                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
+                    </svg>
+                    <div class="informacao_membro">
+                        <h2>Gomes Gomes da Cunha</h2>
+                        <h3>Administrador</h3>
+                    </div>
+                    <input type="image" src="imagens/ban.svg" />
+                </div>
+
+                <div class="membros">
+                    <svg height="72" width="72">
+                        <defs>
+                            <clipPath id="icone_perfil">
+                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
+                            </clipPath>
+                        </defs>
+                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
+                    </svg>
+                    <div class="informacao_membro">
+                        <h2>Gomes Gomes da Cunha</h2>
+                        <h3>Administrador</h3>
+                    </div>
+                    <input type="image" src="imagens/ban.svg" />
+                </div>
+
+                <div class="membros">
+                    <svg height="72" width="72">
+                        <defs>
+                            <clipPath id="icone_perfil">
+                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
+                            </clipPath>
+                        </defs>
+                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
+                    </svg>
+                    <div class="informacao_membro">
+                        <h2>Gomes Gomes da Cunha</h2>
+                        <h3>Administrador</h3>
+                    </div>
+                    <input type="image" src="imagens/ban.svg" />
+                </div>
+            </div>
+        </div>
+
+        <form action="turmas.html">
+        <div class="container">
+            <h1 id="adicionar_tarefa_cabecalho"><img src="imagens/editar.svg" /> <span>Modificar turma</span></h1>
+                
+            <div id="container_tarefa_1">
+                <input class="barra_texto" type="text" placeholder="Nome da turma" value="Infoweb 4" placeholder="Nome da turma" required />
+            </div>
+            <div id="container_tarefa_2">
+                <div id="anexar_imagem">
+                    <label for="myFile">Anexar imagem:</label>
+                    <input type="file" id="myFile" name="filename" accept="image/*">
+                </div>
+                <div id="cor_da_tarefa">
+                    <span id="cor_tarefa"></span>
+                    <input id="hexadecimal" type="text" value="#FFAF66">
+                </div>
+            </div>
+          
+            <div class="container_botoes">
+                <div id="botoes">
+                    <button type="submit" class="adicionar"><div><img src="imagens/certo_icone.svg" /><span>Salvar alterações</span></div></button>
+                    <button type="button" class="cancelar"><div><img src="imagens/x_icone.svg" /><span>Deletar turma</span></div></button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </form>
+
+    </div>
+
+    </main>
+
+    <footer>
+
+        <address>
+            <div>
+                <p>Pramanhã CIA, 00.123.987/0001-50 </p>
+            </div>
+            <div id="redes_sociais">
+                <a href="https://www.x.com/"><img src="imagens/x.svg" /></a>
+                <a href="https://instagram.com/"><img src="imagens/instagram.svg" /></a>
+                <a href="https://gmail.com/"><img src="imagens/gmail.svg" /></a>
+            </div>
+        </address>
+
+    </footer>
+
+</body>
+</html>

@@ -16,6 +16,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 body{
     color: #1d1d1d;
+    position: relative;
+    min-height: 100vh;
+    background-image: url(imagens/fundo.png);
 }
 
 /*Header*/
@@ -145,7 +148,7 @@ nav ul img:hover{
 main{
     background-image: url(imagens/fundo.png);
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 15em;
 }
 #pagina_cabecalho{
     display: flex;
@@ -153,62 +156,30 @@ main{
     margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 4em;
-}
-#migalhas div{
-    font-size: 28px;
     margin-top: 1em;
 }
-#migalhas > a{
-    height: 100%;
+#pagina_cabecalho a{
+    font-weight: bold;
+    font-size: 28px;
     color: black;
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: 0.3s;
-    font-size: 28px;
 }
-#migalhas > a:not(:first-of-type){
-    margin-left: 6px;
-    font-weight: bold;
-}
-#migalhas a:hover{
+#pagina_cabecalho a:hover{
     text-decoration-color: black;
-}
-#botoes_turma{
-    display: flex;
 }
 #pagina_cabecalho button{
     background-color: #f18a8f;
-    box-sizing: border-box;
-    width: auto;
     border: 0;
     cursor: pointer;
     font-size: 19px;
-    display: flex;
+    display: inline-flex;
     height: 70px;
     line-height: 70px;
     border-radius: 1em;
     transition: 180ms;
     padding: 0 1em 0 1em;
-}
-#botoes_turma a{
-    margin-right: 1em;
-    text-decoration: none;
-    background-color: #f18a8f;
-    font-size: 19px;
-    display: flex;
-    height: 70px;
-    line-height: 70px;
-    color: black;
-    transition: 180ms;
-    padding: 0 1em 0 1em;
-    border-radius: 1em;
-}
-#botoes_turma a:hover{
-    background-color: #EF797E;
-}
-#botoes_turma img{
-    width: 23px;
-    margin-right: 0.5em;
 }
 #pagina_cabecalho button:hover{
     background-color: #EF797E;
@@ -218,129 +189,65 @@ main{
     margin-right: 0.5em;
     margin-top: 1.2em;
 }
-#disciplinas{
+#turmas{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 126.13px 126.13px;
+    grid-template-columns: 500px 500px;
+    row-gap: 3em;
     justify-content: space-between;
-    row-gap: 2em;
     width: 59.9%;
     margin: 0 auto;
-    margin-bottom: 6em;
-} 
-#disciplinas a{
-    color: #1d1d1d;
-    text-decoration: none;
+    box-sizing: border-box;
 }
-.disciplinas{ 
-    background-color: #FF5C6D;
-    padding: 2.5em;
-    padding-top: 3em;
-    padding-bottom: 3.5em;
-    text-align: center;
-    transform: rotate(3deg);
-    font-size: 14.5px;
-    box-shadow: 2px 2px 8px #696969;
+#turmas a{
+    text-decoration: none;
+    color: #000;
+}
+#turmas a:hover .turmas{
+    transform: scale(1.01);
+}
+.turmas{
+    position: relative;
+    box-shadow: 4px 4px 10px #00000079;
     transition: all 0.2s ease-in-out;
 }
-.disciplinas h2{
-    transform: rotate(-3deg);
+.turma_imagem{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
 }
-#disciplinas a:hover .disciplinas{
-    transform: scale(1.05);
+.turma_caderno{
+    position: absolute;
+    left: -1.1em;
+    top: 1.3em;
+    height: 260px;
 }
-#divisora{
-    width: 59.9%;;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-#pagina_baixo{
-    margin: 0 auto;
-    width: 59.9%;
-    margin-top: 4em;
+.turma_nome{
     display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
+    height: 90px;
+    background-color: #B1D99A;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4px;
+    transition: 0.2s;
 }
-.cards{
-    background-color: #F5ECDA;
-    height: 300px;
-    display: inline-block;
-    padding: 2em;
-    width: 350px;
+.turma_nome h2{
+    font-size: 30px;
+    font-weight: 600;
 }
-.card_cabecalho{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
+#turmas a:hover .turma_nome{
+    background-color: #aacf97;
 }
-.card_cabecalho img{
-    width: 40px;
-    height: 35px;
-}
-.card_cabecalho a{
-    color: #3E79AD;
-    text-decoration: underline;
-    border: 0;  
-    background: none;
-    cursor: pointer;
-    font-size: 17px;
-    margin-top: 2em;
-    transition: 100ms;
-}
-.card_cabecalho a:hover{
-    color: #295072;
-}
-.card_cabecalho div:last-of-type{
-    margin-top: 0.7em;
-}
-.card_titulo{
-    display: inline-flex;
-}
-.card_titulo h1{
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 4px;
-}
-.membros{
-    display: flex;
-    border-bottom: 1px solid #696969;
-}
-.membros svg{
-    padding-right: 10px;
-    border-right: 1px solid #FF5C6D;
-}
-.informacao_membro{
-    padding: 0.5em;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.informacao_membro h2{
-    font-size: 19px;
-}
-#membros_turma{
-    max-height: 225px;
-    overflow: auto;
-}
-#aviso_container{
-    max-height: 225px;
-    overflow: auto;
-}
-.avisos{
-    padding: 0.8em;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-left: 1px solid #FF5C6D;
-    border-bottom: 1px solid #696969;
-}
-.avisos h2{
-    font-size: 19px;
-}
+
 /*Footer*/
 
 footer{
     font-size: 20px;
     background-color: #F4ECDB;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 footer address{
     display: flex;
@@ -505,23 +412,31 @@ address a img:hover{
     margin-top: 2.5em;
 }
 #container_tarefa_2{
-    display: flex;
-    margin-top: 1em;
-    justify-content: space-between;
+    margin-top: 1.5em;
+}
+#container_tarefa_2 div{
+    margin-bottom: 1.5em;
+}
+#container_tarefa_2 h2 img{
+    width: 30px;
+}
+#anexar_imagem label{
+    font-size: 19px;
+    font-weight: 500;
 }
 #data_tarefa{
     display: flex;
 }
+#data_tarefa span{
+    margin-top: 0.8em;
+    margin-left: 1em;
+    font-size: 20px;
+    font-weight: 450;
+}
 #data_tarefa img{
     width: 55px;
     border-right: 1px solid #606060;
-    padding-right: 10px;
-    margin-right: 2em;
-}
-#data_tarefa input{
-    border: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 8px;
 }
 #notificacao_tarefa{
     display: flex;
@@ -539,6 +454,7 @@ address a img:hover{
 }
 .conteudo_tarefa{
     border-radius: 1em;
+    border: 1px solid #606060;
     padding: 0.5em;
     padding-right: 1.5em;
 }

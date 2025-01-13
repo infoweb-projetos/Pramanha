@@ -16,6 +16,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 body{
     color: #1d1d1d;
+    position: relative;
+    min-height: 100vh;
+    background-image: url(imagens/fundo.png);
+    display: flex;
+    flex-direction: column;
 }
 
 /*Header*/
@@ -145,202 +150,92 @@ nav ul img:hover{
 main{
     background-image: url(imagens/fundo.png);
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 15em;
 }
-#pagina_cabecalho{
-    display: flex;
-    width: 59.9%;
-    margin: 0 auto;
-    justify-content: space-between;
-    margin-bottom: 4em;
-}
-#migalhas div{
-    font-size: 28px;
-    margin-top: 1em;
-}
-#migalhas > a{
-    height: 100%;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 0.3s;
-    font-size: 28px;
-}
-#migalhas > a:not(:first-of-type){
-    margin-left: 6px;
-    font-weight: bold;
-}
-#migalhas a:hover{
-    text-decoration-color: black;
-}
-#botoes_turma{
-    display: flex;
-}
-#pagina_cabecalho button{
-    background-color: #f18a8f;
+main *{
     box-sizing: border-box;
-    width: auto;
-    border: 0;
-    cursor: pointer;
-    font-size: 19px;
-    display: flex;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 1em;
-    transition: 180ms;
-    padding: 0 1em 0 1em;
 }
-#botoes_turma a{
-    margin-right: 1em;
-    text-decoration: none;
-    background-color: #f18a8f;
-    font-size: 19px;
-    display: flex;
-    height: 70px;
-    line-height: 70px;
-    color: black;
-    transition: 180ms;
-    padding: 0 1em 0 1em;
-    border-radius: 1em;
-}
-#botoes_turma a:hover{
-    background-color: #EF797E;
-}
-#botoes_turma img{
-    width: 23px;
-    margin-right: 0.5em;
-}
-#pagina_cabecalho button:hover{
-    background-color: #EF797E;
-}
-#pagina_cabecalho button img{
-    width: 25px;
-    margin-right: 0.5em;
-    margin-top: 1.2em;
-}
-#disciplinas{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 126.13px 126.13px;
-    justify-content: space-between;
-    row-gap: 2em;
-    width: 59.9%;
-    margin: 0 auto;
-    margin-bottom: 6em;
-} 
-#disciplinas a{
-    color: #1d1d1d;
-    text-decoration: none;
-}
-.disciplinas{ 
-    background-color: #FF5C6D;
-    padding: 2.5em;
-    padding-top: 3em;
-    padding-bottom: 3.5em;
-    text-align: center;
-    transform: rotate(3deg);
-    font-size: 14.5px;
-    box-shadow: 2px 2px 8px #696969;
-    transition: all 0.2s ease-in-out;
-}
-.disciplinas h2{
-    transform: rotate(-3deg);
-}
-#disciplinas a:hover .disciplinas{
-    transform: scale(1.05);
-}
-#divisora{
-    width: 59.9%;;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-#pagina_baixo{
+main > div{
+    background-color: #F4ECDB;
     margin: 0 auto;
     width: 59.9%;
-    margin-top: 4em;
-    display: flex;
-    justify-content: space-between;
-}
-.cards{
-    background-color: #F5ECDA;
-    height: 300px;
-    display: inline-block;
     padding: 2em;
-    width: 350px;
-}
-.card_cabecalho{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
 }
-.card_cabecalho img{
-    width: 40px;
-    height: 35px;
+main > div >section:not(:last-of-type){
+    margin-right: 2em;
 }
-.card_cabecalho a{
-    color: #3E79AD;
-    text-decoration: underline;
-    border: 0;  
-    background: none;
-    cursor: pointer;
-    font-size: 17px;
-    margin-top: 2em;
-    transition: 100ms;
+#dados_gerais{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-.card_cabecalho a:hover{
-    color: #295072;
-}
-.card_cabecalho div:last-of-type{
-    margin-top: 0.7em;
-}
-.card_titulo{
-    display: inline-flex;
-}
-.card_titulo h1{
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-top: 4px;
-}
-.membros{
+#perfil_cabecalho{
     display: flex;
-    border-bottom: 1px solid #696969;
+    align-items: center;
+    justify-content: space-between;
 }
-.membros svg{
-    padding-right: 10px;
-    border-right: 1px solid #FF5C6D;
+#perfil_cabecalho h1{
+    font-weight: 600;
+    font-size: 30px;
 }
-.informacao_membro{
+#foto_perfil{
+    width: 153.17px;
+    padding: 1em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#botao_perfil_editar{
+    cursor: pointer;
+    border: 0;
+    font-size: 19px;
     padding: 0.5em;
-    margin-left: 20px;
-    margin-top: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    background-color: #f18a8f;
+    border-radius: 1em;
+    transition: 180ms;
 }
-.informacao_membro h2{
-    font-size: 19px;
+#botao_perfil_editar:hover{
+    background-color: #EF797E;
 }
-#membros_turma{
-    max-height: 225px;
-    overflow: auto;
+#botao_perfil_editar > img{
+    width: 22px;
+    margin-right: 0.5em;
 }
-#aviso_container{
-    max-height: 225px;
-    overflow: auto;
+#ver_dados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.avisos{
-    padding: 0.8em;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-left: 1px solid #FF5C6D;
-    border-bottom: 1px solid #696969;
+#perfil_informacoes{
+    display: flex;
 }
-.avisos h2{
-    font-size: 19px;
+#perfil_informacoes > div span{
+    display: block;
+    text-align: left;
+    color: #000000da;
+    font-size: 20px;
+    margin-right: 0.5em;
 }
+#perfil_dados > span{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
 /*Footer*/
 
 footer{
     font-size: 20px;
     background-color: #F4ECDB;
+    position: relative;
+    margin-top: auto    
 }
 footer address{
     display: flex;
@@ -574,4 +469,22 @@ address a img:hover{
 #urgente label{
     font-size: 18px;
     font-weight: 450;
+}
+#editar_perfil_conteudos{
+    display: flex;
+}
+#editar_perfil_conteudos #perfil_foto{
+    margin-top: 4em;
+    margin-left: 2em;
+}   
+#editar_perfil_conteudos #perfil_foto button{
+    border: 0;
+    background-color: transparent;
+}
+#editar_perfil_conteudos #perfil_foto button img{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#editar_perfil_conteudos #perfil_foto button img:hover{
+    filter: brightness(50%);
 }

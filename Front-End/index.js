@@ -1,27 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const buttonVerTodos = document.querySelector(".card_cabecalho button");
-  const modal = document.querySelector("#modal_membros");
-  const closeModalButton = document.querySelector("#close_modal");
-  const memberList = document.querySelector("#lista_membros");
+const button = document.querySelector("#disciplinas_cabecalho button")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog button")
 
-  buttonVerTodos.onclick = function () {
-      modal.showModal();
-  };
-//fechar
-  closeModalButton.onclick = function () {
-      modal.close();
-  };
+button.onclick = function(){
+  modal.showModal()
+}
 
-  modal.addEventListener("click", function (event) {
-      if (event.target === modal) {
-          modal.close();
-      }
-  });
-
-  memberList.addEventListener("click", function (event) {
-      if (event.target.closest(".remove_member")) {
-          const memberItem = event.target.closest("li");
-          memberList.removeChild(memberItem);
-      }
-  });
-});
+buttonClose.onclick = function (){
+    modal.close()
+}

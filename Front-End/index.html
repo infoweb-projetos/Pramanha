@@ -6,214 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="index.css" rel="stylesheet" />
     <title>Pramanhã - Home</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
     </style>
+
 </head>
+
 <body>
     <header>
+
         <nav>
             <h1 id="logo">
                 <a href="index.html"><img src="imagens/logo.svg" /></a> 
             </h1>
 
-            <form action="" id="barra_pesquisa">
-                <input type="search" name="pesquisa" placeholder="Busque sua turma" />
-                <button type="submit"><img src="imagens/lupa.svg" /></button>
-            </form>
+                <a href="login.html" id="entrar_botao" class="botoes_nav"><img src="imagens/entrar.svg" /><span>Entrar</span></a>
+                <a href="registro.html" id="criar_botao" class="botoes_nav"><img src="imagens/criar_conta.svg" /><span>Criar conta</span></a>
+            
 
-            <ul>
-                <li id="botao_not"><button type="button"><img src="imagens/notificacao.svg" /></button></li>
-                <li id="botao_perfil"><a href="login.html"><img src="imagens/conta.svg" /></a></li>
-            </ul>
         </nav>   
+
     </header>
 
     <main>
-        <section id="pagina_cabecalho">
-            <h1>Infoweb 4V</h1>
-            <button><img src="imagens/adicionar.svg" /> <span>Adicionar disciplina</span></button>
+
+        <section class="anuncio">
+            <div id="div_banner">
+                <h1>Organizando suas <br> metas com você</h1>
+                <p>Não deixe <span>Pramanhã</span> e se <br> planeje hoje mesmo.</p>
+                <a href="registro.html"><img src="imagens/run.svg" />Vamos lá</a>
+            </div>
+        </section>
+        
+        <section class="sobre">
+            <div>
+                <p>Pramanhã tem o objetivo de ajudar alunos federais a manterem suas rotinas organizadas por meio de um processo de agenda simplificado e automatizado, reunindo em um só lugar as principais funções que os discentes necessitam, e focando em um maior contato entre os integrantes das turmas graças a um ambiente colaborativo.</p>
+            </div>
+
+
+                <img src="imagens/laptop.svg"/>
+            </div>
+
         </section>
 
-            <section id="disciplinas">
-                <a href="turma.html"><div class="disciplinas" id="disciplina_1" style="background-color: #FF8C45;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_2" style="background-color: #FF5C6D;">
-                    <h2>História</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_3" style="background-color: #5ECFFF;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_4" style="background-color: #ADFF5A;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_5" style="background-color: #FF8C45;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_6" style="background-color: #ADFF5A;">
-                    <h2>Matemática</h2>   
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_7" style="background-color: #5ECFFF;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_8" style="background-color: #FF8C45;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_9" style="background-color: #FF5C6D;">
-                    <h2>Matemática</h2>
-                </div></a>
-                <a href="turma.html"><div class="disciplinas" id="disciplina_10" style="background-color: #ADFF5A;"> 
-                    <h2>Matemática</h2>
-                </div></a>
+        <!--<hr id="linha_horizontal"/>-->
+
+        <section class="planejamento">
+            <div>
+                <h1>Se planeje da melhor forma <br> e com mais praticidade!</h1>
+            </div>
+
+            <div id="diferencial">
+                <div>
+                    <img src="imagens/compartilhamento.svg"/>
+                    <h2>Compartilhamento</h2>
+                    <p>O Pramanhã permite que seus amigos compartilhem tarefas de forma organizada e prática.</p>
+                </div>
+                <div>
+                    <img src="imagens/lembrete.svg"/>
+                    <h2>Notificação direta</h2>
+                    <p>Te lembramos constantemente das suas tarefas com antecedência, então pode ficar tranquilo quanto a isso.</p>
+                </div>
+                <div>
+                    <img src="imagens/cerebro.svg"/>
+                    <h2>Interface intuitiva</h2>
+                    <p>Possuimos uma interface simples e intuitiva, afim de facilitar seu planejamento.</p>
+                </div>
+            </div>
                 
-            </section>
-    
+        </section>
 
-
-        <hr id="divisora" />
-
-        <section id="pagina_baixo">
-            <section class="cards" id="card_membro">
-                <div class="card_cabecalho">
-                    <div class="card_titulo">
-                        <img src="imagens/membros.svg" />
-                        <h1>Membros</h1>
-                    </div>
-
-                    <div>
-                        <button>Ver todos</button>
-                    </div>    
-                </div>
-
-                <div class="membros">
-                    <svg height="72" width="72">
-                        <defs>
-                            <clipPath id="icone_perfil">
-                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
-                            </clipPath>
-                        </defs>
-                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
-                    </svg>
-                    <div class="informacao_membro">
-                        <h2>Gomes Gomes da Cunha</h2>
-                        <h3>Administrador</h3>
-                    </div>
-                </div>
-
-                <div class="membros">
-                    <svg height="72" width="72">
-                        <defs>
-                            <clipPath id="icone_perfil">
-                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
-                            </clipPath>
-                        </defs>
-                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
-                    </svg>
-                    <div class="informacao_membro">
-                        <h2>Gomes Gomes da Cunha</h2>
-                        <h3>Administrador</h3>
-                    </div>
-                </div>
-
-                <div class="membros">
-                    <svg height="72" width="72">
-                        <defs>
-                            <clipPath id="icone_perfil">
-                                <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none"/>
-                            </clipPath>
-                        </defs>
-                        <image width="74" height="74" xlink:href="imagens/rat-dance.gif" clip-path="url(#icone_perfil)" />
-                    </svg>
-                    <div class="informacao_membro">
-                        <h2>Gomes Gomes da Cunha</h2>
-                        <h3>Administrador</h3>
-                    </div>
-                </div>
-
-            </section>
-            <section class="cards" id="card_membro">
-
-                <div class="card_cabecalho">
-                    <div class="card_titulo">
-                        <img src="imagens/avisos.svg" />
-                        <h1>Avisos</h1>
-                    </div>
-                    <div>
-                        <button>Ativar notificações</button>
-                    </div>
-                </div>
-
-                <div class="avisos">
-                    <h2>PIU: seminário amanhã</h2>
-                    <h3>11/08</h3>
-                </div>
-                <div class="avisos">
-                    <h2>PIU: seminário amanhã</h2>
-                    <h3>11/08</h3>
-                    </div>
-                <div class="avisos">
-                    <h2>PIU: seminário amanhã</h2>
-                    <h3>11/08</h3>
-                </div>
-
-            </section>
-
-        </section>  
-
-            </section>
-        </section>  
     </main>
 
-    <dialog id="modal_membros">
-        <div class="modal_content">
-            <div class="modal_header">
-                <h2>Membros</h2>
-                <img src="imagens/membros.svg" alt="Ícone de membros" />
-            </div>
-            <ul id="lista_membros">
-                <li>
-                    Gomes da Cunha
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-                <li>
-                    José da Silva
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-                <li>
-                    Maria Soares
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-                <li>
-                    Maria Carla
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-                <li>
-                    Beatriz Arruda
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-                <li>
-                    Ana Maria
-                    <button class="remove_member">
-                        <img src="imagens/borracha.svg" alt="Remover membro" />
-                    </button>
-                </li>
-            </ul>
-            <button id="close_modal">Cancelar</button>
-        </div>
-    </dialog>
-    
     <footer>
+
         <address>
             <div>
                 <p>Pramanhã CIA, 00.123.987/0001-50 </p>
@@ -224,8 +91,8 @@
                 <a href="https://gmail.com/"><img src="imagens/gmail.svg" /></a>
             </div>
         </address>
+
     </footer>
 
-    <script src="index.js"></script>
 </body>
 </html>

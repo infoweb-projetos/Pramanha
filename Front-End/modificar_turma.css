@@ -16,6 +16,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 body{
     color: #1d1d1d;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(imagens/fundo.png);
 }
 
 /*Header*/
@@ -144,129 +147,19 @@ nav ul img:hover{
 
 main{
     background-image: url(imagens/fundo.png);
-    padding-top: 3em;
+    padding-top: 6em;
     padding-bottom: 3em;
 }
-#pagina_cabecalho{
+main > div{
     display: flex;
     width: 59.9%;
     margin: 0 auto;
     justify-content: space-between;
-    margin-bottom: 4em;
 }
-#migalhas div{
-    font-size: 28px;
-    margin-top: 1em;
-}
-#migalhas > a{
-    height: 100%;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 0.3s;
-    font-size: 28px;
-}
-#migalhas > a:not(:first-of-type){
-    margin-left: 6px;
-    font-weight: bold;
-}
-#migalhas a:hover{
-    text-decoration-color: black;
-}
-#botoes_turma{
-    display: flex;
-}
-#pagina_cabecalho button{
-    background-color: #f18a8f;
-    box-sizing: border-box;
-    width: auto;
-    border: 0;
-    cursor: pointer;
-    font-size: 19px;
-    display: flex;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 1em;
-    transition: 180ms;
-    padding: 0 1em 0 1em;
-}
-#botoes_turma a{
-    margin-right: 1em;
-    text-decoration: none;
-    background-color: #f18a8f;
-    font-size: 19px;
-    display: flex;
-    height: 70px;
-    line-height: 70px;
-    color: black;
-    transition: 180ms;
-    padding: 0 1em 0 1em;
-    border-radius: 1em;
-}
-#botoes_turma a:hover{
-    background-color: #EF797E;
-}
-#botoes_turma img{
-    width: 23px;
-    margin-right: 0.5em;
-}
-#pagina_cabecalho button:hover{
-    background-color: #EF797E;
-}
-#pagina_cabecalho button img{
-    width: 25px;
-    margin-right: 0.5em;
-    margin-top: 1.2em;
-}
-#disciplinas{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 126.13px 126.13px;
-    justify-content: space-between;
-    row-gap: 2em;
-    width: 59.9%;
-    margin: 0 auto;
-    margin-bottom: 6em;
-} 
-#disciplinas a{
-    color: #1d1d1d;
-    text-decoration: none;
-}
-.disciplinas{ 
-    background-color: #FF5C6D;
-    padding: 2.5em;
-    padding-top: 3em;
-    padding-bottom: 3.5em;
-    text-align: center;
-    transform: rotate(3deg);
-    font-size: 14.5px;
-    box-shadow: 2px 2px 8px #696969;
-    transition: all 0.2s ease-in-out;
-}
-.disciplinas h2{
-    transform: rotate(-3deg);
-}
-#disciplinas a:hover .disciplinas{
-    transform: scale(1.05);
-}
-#divisora{
-    width: 59.9%;;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-#pagina_baixo{
-    margin: 0 auto;
-    width: 59.9%;
-    margin-top: 4em;
-    display: flex;
-    justify-content: space-between;
-}
-.cards{
-    background-color: #F5ECDA;
-    height: 300px;
-    display: inline-block;
-    padding: 2em;
-    width: 350px;
+#membros_da_turma{
+    background-color: #F4ECDB;
+    width: 35%;
+    padding: 3em;
 }
 .card_cabecalho{
     display: flex;
@@ -277,21 +170,18 @@ main{
     width: 40px;
     height: 35px;
 }
-.card_cabecalho a{
+.card_cabecalho button{
     color: #3E79AD;
     text-decoration: underline;
     border: 0;  
     background: none;
     cursor: pointer;
     font-size: 17px;
-    margin-top: 2em;
+    margin-top: 11.5px;
     transition: 100ms;
 }
-.card_cabecalho a:hover{
+.card_cabecalho button:hover{
     color: #295072;
-}
-.card_cabecalho div:last-of-type{
-    margin-top: 0.7em;
 }
 .card_titulo{
     display: inline-flex;
@@ -305,6 +195,8 @@ main{
 .membros{
     display: flex;
     border-bottom: 1px solid #696969;
+    justify-content: space-between;
+    padding-right: 1.5em;
 }
 .membros svg{
     padding-right: 10px;
@@ -312,8 +204,16 @@ main{
 }
 .informacao_membro{
     padding: 0.5em;
-    margin-left: 20px;
+    margin-left: -1em;
     margin-top: 10px;
+}
+.membros input{
+    width: 25px;
+    margin-top: 0.2em;
+    transition: 0.2s ease-in-out;
+}
+.membros input:hover{
+    transform: scale(1.1);
 }
 .informacao_membro h2{
     font-size: 19px;
@@ -322,25 +222,16 @@ main{
     max-height: 225px;
     overflow: auto;
 }
-#aviso_container{
-    max-height: 225px;
-    overflow: auto;
-}
-.avisos{
-    padding: 0.8em;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-left: 1px solid #FF5C6D;
-    border-bottom: 1px solid #696969;
-}
-.avisos h2{
-    font-size: 19px;
-}
+
 /*Footer*/
 
 footer{
     font-size: 20px;
     background-color: #F4ECDB;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 footer address{
     display: flex;
@@ -405,7 +296,7 @@ address a img:hover{
     margin-right: 8px;
 }   
 .cancelar div{
-    width: 140px;
+    width: 160px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -418,7 +309,7 @@ address a img:hover{
     display: flex;
 }
 .adicionar div{
-    width: 140px;
+    width: 200px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -438,6 +329,7 @@ address a img:hover{
     padding-top: 3em;
     padding-bottom: 3em;
     display: left;
+    background-color: #F4ECDB;
 }
 
 /* The Modal (background) */
@@ -505,23 +397,31 @@ address a img:hover{
     margin-top: 2.5em;
 }
 #container_tarefa_2{
-    display: flex;
-    margin-top: 1em;
-    justify-content: space-between;
+    margin-top: 1.5em;
+}
+#container_tarefa_2 div{
+    margin-bottom: 1.5em;
+}
+#container_tarefa_2 h2 img{
+    width: 30px;
+}
+#anexar_imagem label{
+    font-size: 19px;
+    font-weight: 500;
 }
 #data_tarefa{
     display: flex;
 }
+#data_tarefa span{
+    margin-top: 0.8em;
+    margin-left: 1em;
+    font-size: 20px;
+    font-weight: 450;
+}
 #data_tarefa img{
     width: 55px;
     border-right: 1px solid #606060;
-    padding-right: 10px;
-    margin-right: 2em;
-}
-#data_tarefa input{
-    border: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 8px;
 }
 #notificacao_tarefa{
     display: flex;
@@ -539,6 +439,7 @@ address a img:hover{
 }
 .conteudo_tarefa{
     border-radius: 1em;
+    border: 1px solid #606060;
     padding: 0.5em;
     padding-right: 1.5em;
 }
